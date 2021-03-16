@@ -1,0 +1,21 @@
+{
+    "packages": ["packages/*"],
+    "hoist": true,
+    "version": "independent",
+    "npmClient": "npm",
+    "useWorkspaces": true,
+    "command": {
+        "version": {
+            "message": "chore(release): publish %s"
+        },
+        "bootstrap": {
+            "npmClientArgs": ["--no-package-lock"]
+        },
+        "ignoreChanges": ["**/*.stories.tsx", "**/__tests__/**", "**/*.md"],
+        "npmClient": "npm",
+        "publish": {
+            "registry": "https://npm.pkg.github.com",
+            "allowBranch": "main"
+        }
+    }
+}

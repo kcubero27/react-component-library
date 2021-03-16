@@ -1,0 +1,43 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true,
+        "jest/globals": true
+    },
+    "extends": [
+        "plugin:react/recommended",
+        "airbnb",
+        "plugin:jest/recommended",
+        "plugin:jsx-a11y/recommended",
+        "prettier"
+    ], // Prettier always needs to be last one
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 12,
+        "sourceType": "module"
+    },
+    "plugins": ["react", "@typescript-eslint", "jest", "jsx-a11y"],
+    "rules": {
+        "jest/no-disabled-tests": "warn",
+        "jest/no-focused-tests": "error",
+        "jest/no-identical-title": "error",
+        "jest/prefer-to-have-length": "warn",
+        "jest/valid-expect": "error",
+        "import/prefer-default-export": 0,
+        "import/extensions": 0,
+        "import/no-extraneous-dependencies": [
+            "error",
+            { "devDependencies": ["**/*.test.tsx", "**/*.spec.tsx"] }
+        ],
+        "react/jsx-props-no-spreading": 0,
+        "no-use-before-define": [0],
+        "@typescript-eslint/no-use-before-define": [1],
+        "react/jsx-filename-extension": [1, { "extensions": [".ts", ".tsx"] }],
+        "react/jsx-uses-react": "off",
+        "react/react-in-jsx-scope": "off",
+        "import/no-unresolved": "off"
+    }
+}

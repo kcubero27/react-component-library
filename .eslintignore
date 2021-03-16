@@ -1,0 +1,15 @@
+# Dependencies
+node_modules/
+**/node_modules/
+
+# Output build
+build/
+storybook-static/
+
+__tests__
+
+*.stories.tsx
+
+cypress
+
+coverage/
