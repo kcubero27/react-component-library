@@ -15,7 +15,7 @@
         "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
         "lint:fix": "eslint . --ext .js,.jsx,.ts,.tsx --fix",
         "version": "lerna version --conventional-commits",
-        "version:github": "lerna version --conventional-commits --create-release=github",
+        "version:github": "lerna version --conventional-commits --create-release=github --yes",
         "lerna": "lerna",
         "publish": "lerna publish",
         "test:unit": "NODE_ENV=test jest",
