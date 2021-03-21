@@ -5,9 +5,10 @@
     "author": "Karen Cubero <kaaerreeene@gmail.com>",
     "homepage": "",
     "license": "MIT",
-    "main": "",
+    "main": "build/index.js",
+    "repository": "https://github.com/kcubero27/react-component-library.git",
     "publishConfig": {
-        "registry": "https://github.com/kcubero27/react-component-library.git"
+        "registry": "https://npm.pkg.github.com/"
     },
     "directories": {
         "lib": "lib",
@@ -23,5 +24,5 @@
         "react": "^17.0.1",
         "react-dom": "^17.0.1"
     },
-    "gitHead": "5b2c6ec78ba73b313779ff228355e933c83d969f"
+    "gitHead": "f5dba5a82838b96c79065f78b36942f473f6be96"
 }
