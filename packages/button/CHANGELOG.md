@@ -5,14 +5,9 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [1.2.0](https://github.com/kcubero27/react-component-library/compare/button@1.1.0...button@1.2.0) (2021-03-21)
 
-
 ### Features
 
-* **lerna version:** skip are youy sure you want to publish these packages when running version ([89eb777](https://github.com/kcubero27/react-component-library/commit/89eb777738ee356b5087f2b5cd0aa9d8b805ce96))
-
-
-
-
+-   **lerna version:** skip are youy sure you want to publish these packages when running version ([89eb777](https://github.com/kcubero27/react-component-library/commit/89eb777738ee356b5087f2b5cd0aa9d8b805ce96))
 
 # 1.1.0 (2021-03-21)
 

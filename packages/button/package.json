@@ -4,7 +4,7 @@
     "description": "> TODO: description",
     "author": "Karen Cubero <kaaerreeene@gmail.com>",
     "homepage": "",
-    "license": "ISC",
+    "license": "MIT",
     "main": "lib/button.tsx",
     "directories": {
         "lib": "lib",
@@ -19,5 +19,6 @@
     "peerDependencies": {
         "react": "^17.0.1",
         "react-dom": "^17.0.1"
-    }
+    },
+    "gitHead": "e740745d5a7d70aa52c0b94f51d0dd879954370b"
 }
