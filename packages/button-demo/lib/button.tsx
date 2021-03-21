@@ -8,14 +8,14 @@ export const Button = ({
     label,
 }: ButtonProps) => {
     const mode = primary
-        ? 'storybook-button--primary'
-        : 'storybook-button--secondary';
+        ? 'storybook-button-demo--primary'
+        : 'storybook-button-demo--secondary';
 
     return (
         <button
             type='button'
             className={[
-                'storybook-button',
+                'storybook-button-demo',
                 `storybook-button--${size}`,
                 mode,
             ].join(' ')}>

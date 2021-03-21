@@ -1,11 +1,11 @@
 {
-    "name": "@react-component-library/button",
+    "name": "@kcubero27/button-demo",
     "version": "1.2.0",
     "description": "> TODO: description",
     "author": "Karen Cubero <kaaerreeene@gmail.com>",
     "homepage": "",
     "license": "MIT",
-    "main": "lib/button.tsx",
+    "main": "",
     "directories": {
         "lib": "lib",
         "test": "__tests__"
@@ -20,5 +20,5 @@
         "react": "^17.0.1",
         "react-dom": "^17.0.1"
     },
-    "gitHead": "e740745d5a7d70aa52c0b94f51d0dd879954370b"
+    "gitHead": "a28a5538309371d9f06ecd2a43a9716fb82ea810"
 }
