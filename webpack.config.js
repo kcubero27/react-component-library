@@ -5,7 +5,7 @@ const pkg = require('./package.json');
 const aliases = {
     '@kcubero27/button-demo': path.resolve(
         __dirname,
-        './packages/button-demo/lib/button.tsx'
+        './packages/button-demo/src/button.tsx'
     ),
 };
 
@@ -19,7 +19,7 @@ module.exports = {
     entry: {
         Button: path.resolve(
             __dirname,
-            './packages/button-demo/lib/button.tsx'
+            './packages/button-demo/src/button.tsx'
         ),
     },
     resolve: {
@@ -48,7 +48,7 @@ module.exports = {
     output: {
         filename: pkg.main,
         publicPath: '/',
-        path: path.resolve(__dirname, 'build'),
+        path: path.resolve(__dirname, 'dist'),
         libraryTarget: 'commonjs',
     },
     plugins: [],

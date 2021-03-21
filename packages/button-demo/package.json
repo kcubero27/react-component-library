@@ -5,18 +5,27 @@
     "author": "Karen Cubero <kaaerreeene@gmail.com>",
     "homepage": "",
     "license": "MIT",
-    "main": "build/index.js",
+    "main": "dist/cjs/index.js",
+    "module": "dist/esm/index.js",
+    "types": "dist/types/index.d.ts",
+    "typings": "dist/types/index.d.ts",
+    "exports": {
+        ".": {
+            "require": "./dist/cjs/index.js",
+            "default": "./dist/esm/index.js"
+        }
+    },
+    "files": [
+        "dist"
+    ],
     "repository": "https://github.com/kcubero27/react-component-library.git",
     "publishConfig": {
         "registry": "https://npm.pkg.github.com/"
     },
     "directories": {
-        "lib": "lib",
-        "test": "__tests__"
+        "lib": "src",
+        "test": "tests"
     },
-    "files": [
-        "build"
-    ],
     "scripts": {
         "build": "NODE_ENV=production webpack --config ../../webpack.config.js"
     },

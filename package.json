@@ -23,9 +23,9 @@
         "publish": "lerna publish",
         "test:unit": "NODE_ENV=test jest",
         "test:unit:coverage": "NODE_ENV=test jest --collect-coverage",
-        "test:open": "cypress open",
-        "test:e2e": "cypress run --headed",
-        "test:e2e:headless": "cypress run --headless",
+        "test:open": "NODE_ENV=test cypress open",
+        "test:e2e": "NODE_ENV=test cypress run --headed",
+        "test:e2e:headless": "NODE_ENV=test cypress run --headless",
         "storybook": "start-storybook -p 6006",
         "prettier": "prettier --write .",
         "git-hooks": "husky install"

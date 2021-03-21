@@ -6,7 +6,7 @@ node_modules/
 build/
 storybook-static/
 
-__tests__
+tests
 
 *.stories.tsx
 

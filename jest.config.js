@@ -12,9 +12,9 @@ module.exports = {
             'jest-transform-stub',
     },
     transform: {
-        '^.+\\.(ts|js|tsx)$': 'babel-jest',
+        '^.+\\.(ts|js|jsx|tsx)$': 'babel-jest',
     },
     verbose: true,
-    setupFilesAfterEnv: ['<rootDir>/jest-setup.ts'],
+    setupFilesAfterEnv: ['<rootDir>/jest-setup.js'],
     testMatch: ['**/?(*.)+(test).[jt]s?(x)'],
 };
