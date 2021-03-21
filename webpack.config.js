@@ -3,9 +3,9 @@ const path = require('path');
 const pkg = require('./package.json');
 
 const aliases = {
-    '@react-component-library/button': path.resolve(
+    '@kcubero27/button-demo': path.resolve(
         __dirname,
-        './packages/button/lib/button.tsx'
+        './packages/button-demo/lib/button.tsx'
     ),
 };
 
@@ -17,7 +17,10 @@ const mode =
 module.exports = {
     mode,
     entry: {
-        Button: path.resolve(__dirname, './packages/button/lib/button.tsx'),
+        Button: path.resolve(
+            __dirname,
+            './packages/button-demo/lib/button.tsx'
+        ),
     },
     resolve: {
         alias: aliases,
