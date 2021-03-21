@@ -9,6 +9,9 @@
     "workspaces": [
         "packages/*"
     ],
+    "publishConfig": {
+        "registry": "https://github.com/kcubero27/react-component-library.git"
+    },
     "scripts": {
         "build:packages": "lerna run build",
         "build:storybook": "build-storybook",

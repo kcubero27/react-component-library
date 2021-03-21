@@ -6,12 +6,15 @@
     "homepage": "",
     "license": "MIT",
     "main": "",
+    "publishConfig": {
+        "registry": "https://github.com/kcubero27/react-component-library.git"
+    },
     "directories": {
         "lib": "lib",
         "test": "__tests__"
     },
     "files": [
-        "lib"
+        "build"
     ],
     "scripts": {
         "build": "NODE_ENV=production webpack --config ../../webpack.config.js"
@@ -20,5 +23,5 @@
         "react": "^17.0.1",
         "react-dom": "^17.0.1"
     },
-    "gitHead": "a28a5538309371d9f06ecd2a43a9716fb82ea810"
+    "gitHead": "5b2c6ec78ba73b313779ff228355e933c83d969f"
 }
