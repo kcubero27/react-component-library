@@ -10,6 +10,9 @@ Lerna [hoist](https://github.com/lerna/lerna/blob/main/doc/hoist.md) option allo
 
 npm run lerna -- create @rcl/button
 
+In one hand, .spec.jsx files run under Cypress. This means we need to use expect from Chai.
+In the other hand, .test.jsx files run under Jest.
+
 ## Tools
 
 -   [Lerna](https://github.com/lerna/lerna)

@@ -15,7 +15,7 @@
         "isolatedModules": true,
         "noEmit": false,
         "jsx": "react-jsx",
-        "declaration": true,
+        "declaration": true
     },
     "include": ["packages/"],
     "exclude": [
