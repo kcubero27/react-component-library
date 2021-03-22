@@ -1,29 +1,15 @@
 const path = require('path');
-// THIS SHOULD BE DIFFERENT PER EACH COMPONENT
-const pkg = require('./package.json');
 
-const aliases = {
-    '@kcubero27/button-demo': path.resolve(
-        __dirname,
-        './packages/button-demo/src/button.tsx'
-    ),
-};
+const { NODE_ENV, BABEL_ENV, COMPONENT } = process.env;
+const mode = NODE_ENV === 'test' ? 'development' : NODE_ENV || 'development';
 
-const mode =
-    process.env.NODE_ENV === 'test'
-        ? 'development'
-        : process.env.NODE_ENV || 'development';
-
+// TODO: avoid creating types. For that, we have a new build:types command
 module.exports = {
     mode,
-    entry: {
-        Button: path.resolve(
-            __dirname,
-            './packages/button-demo/src/button.tsx'
-        ),
-    },
+    devtool: 'source-map',
+    // TODO: how to create a .js file of each .ts or tsx file?
+    entry: path.resolve(__dirname, `./packages/${COMPONENT}/index.ts`),
     resolve: {
-        alias: aliases,
         extensions: ['.ts', '.tsx', '.js'],
         modules: ['node_modules'],
     },
@@ -37,7 +23,7 @@ module.exports = {
             {
                 test: /\.(ts|tsx)$/,
                 exclude: [/node_modules/, /\.test.(ts|tsx)$/],
-                use: ['ts-loader'],
+                loader: 'ts-loader',
             },
             {
                 test: /\.(css|scss)$/,
@@ -46,10 +32,11 @@ module.exports = {
         ],
     },
     output: {
-        filename: pkg.main,
-        publicPath: '/',
-        path: path.resolve(__dirname, 'dist'),
-        libraryTarget: 'commonjs',
+        filename: '[name].js',
+        path: path.resolve(
+            __dirname,
+            `packages/${COMPONENT}/dist/${BABEL_ENV}`
+        ),
     },
     plugins: [],
 };

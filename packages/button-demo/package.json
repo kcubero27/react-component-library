@@ -27,7 +27,10 @@
         "test": "tests"
     },
     "scripts": {
-        "build": "NODE_ENV=production webpack --config ../../webpack.config.js"
+        "build:esm": "cross-env BABEL_ENV=esm NODE_ENV=production COMPONENT=button-demo webpack --config ../../webpack.config.js",
+        "build:cjs": "cross-env BABEL_ENV=cjs NODE_ENV=production COMPONENT=button-demo webpack --config ../../webpack.config.js",
+        "build:types": "tsc --emitDeclarationOnly --declaration --declarationDir dist/types",
+        "build": "concurrently npm:build:*"
     },
     "peerDependencies": {
         "react": "^17.0.1",
